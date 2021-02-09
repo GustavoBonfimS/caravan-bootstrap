@@ -1,3 +1,30 @@
 body {
     padding-top: 75px;
 }
+
+.img-icone {
+    height: 100px;
+}
+
+#home-quote {
+    background: url('../img/bg-quote.jpg') center center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+    #home-quote .display-3 {
+        font-size: 2.5rem;
+    }
+
+    body {
+        padding-top: 0px;
+    }
+
+    .fixed-top {
+        position: relative;
+    }
+}
+
+.btn-footer {
+    max-width: 140px;
+}
