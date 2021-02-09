@@ -44,7 +44,7 @@
                     <a class="nav-link" href="contatos.html">Contato</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
                 </li>
                 <li class="nav-item active">
                     <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -52,6 +52,37 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail"
+                                aria-describedby="emailHelp" placeholder="Insira seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSenha">Senha</label>
+                            <input type="password" class="form-control" id="inputSenha" placeholder="Insira sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <small id="emailHelp" class="form-text text-muted">Esqueceu sua senha? <a href="">Clique aqui</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do modal -->
 
     <section class="container-fluid">
         <div class="row bg-dark text-white">
@@ -289,9 +320,12 @@
                 <div class="col-md-2">
                     <h4 class="h6">REDES SOCIAIS</h4>
                     <ul class="list-unstyled">
-                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer" href="planos.html">Facebook</a></li>
-                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer" href="planos.html">Twitter</a></li>
-                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer" href="planos.html">Youtube</a></li>
+                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer"
+                                href="planos.html">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer"
+                                href="planos.html">Twitter</a></li>
+                        <li><a class="btn btn-outline-secondary mb-2 btn-block btn-sm btn-footer"
+                                href="planos.html">Youtube</a></li>
                     </ul>
                 </div>
             </div>
